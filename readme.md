@@ -6,7 +6,7 @@ An end-to-end data pipeline that automatically processes Twitter data: from craw
 
 ## 🚀 Architecture Overview
 
-```mermaid
+```
 flowchart LR
     A[Twitter Crawler (twscrape)] --> B[Kafka Producer]
     B --> C[Kafka Consumer]
@@ -42,4 +42,10 @@ python3 crawling_services/main.py
 python3 spark_jobs/cleaner.py
 python3 spark_jobs/export_to_postgres.py
 python3 ml_models/predict.py
+```
+
+#Testing Model HuggingFace
+
+```
+https://huggingface.co/VIOLET21/sentiment-bert-tweetx
 ```
