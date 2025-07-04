@@ -39,8 +39,8 @@ Password: airflow
 # Testing Locally
 ```
 python3 crawling_services/main.py
-python3 spark_jobs/cleaner.py
-python3 spark_jobs/export_to_postgres.py
+python3 spark/cleaner.py
+python3 spark/export.py
 python3 ml_models/predict.py
 ```
 
