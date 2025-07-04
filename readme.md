@@ -16,19 +16,19 @@ flowchart LR
     F --> G[HuggingFace BERT (Sentiment Analysis)]
     G --> H[PostgreSQL - Sentiment Results]
 ```
-#How To Use
+# How To Use
 
-##Setup Installation
+## Setup Installation
 ```
 git clone https://github.com/diditeko/social-media-pipeline.git
 cd social-media-pipeline
 ```
-##Build & Run docker
+## Build & Run docker
 ```
 docker-compose up --build
 ```
 
-##Access Airflow UI
+## Access Airflow UI
 ```
 Visit http://localhost:8080
 Default login credentials:
@@ -36,7 +36,7 @@ Username: airflow
 Password: airflow
 ```
 
-#Testing Locally
+# Testing Locally
 ```
 python3 crawling_services/main.py
 python3 spark_jobs/cleaner.py
@@ -44,7 +44,7 @@ python3 spark_jobs/export_to_postgres.py
 python3 ml_models/predict.py
 ```
 
-#Testing Model HuggingFace
+# Testing Model HuggingFace
 
 ```
 https://huggingface.co/VIOLET21/sentiment-bert-tweetx
